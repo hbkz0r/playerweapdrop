@@ -6,7 +6,7 @@ AddEventHandler("chatMessage", function(p, color, msg)
         fullcmd = stringSplit(msg, " ")
         cmd = fullcmd[1]
         args = makeArgs(fullcmd)
-        if cmd == "/drop" then
+        if cmd == "/dropgun" then
             CancelEvent()
             TriggerClientEvent("dropweapon", p)
         end
